@@ -13,6 +13,21 @@ sem biblioteca extra e sem emendar fios.
 Celular → Wi-Fi → ESP32 → Ponte H → Motor DC → Manivela → Seringa mestre → água → Seringa escrava → Junta
 ```
 
+## Diagrama completo
+
+<p align="center"><img src="docs/img/garra-completa.png" alt="Garra completa: ESP32 DevKit V1 no centro, uma ponte H L298N de cada lado com dois motores cada, fonte de 7 V nas trilhas da protoboard e o +5V da Ponte H 1 alimentando o VIN do ESP32"></p>
+
+| Ligação | De → Para |
+|---|---|
+| Sinais Ponte H 1 | D32 → IN1 · D33 → IN2 · D25 → IN3 · D26 → IN4 |
+| Sinais Ponte H 2 | D23 → IN1 · D22 → IN2 · D19 → IN3 · D18 → IN4 |
+| Fonte 7 V | + → trilha + · − → trilha − |
+| Pontes H | +12V → trilha + · GND → trilha − |
+| ESP32 | GND → trilha − · VIN ← +5V da Ponte H 1 · 3V3 sem nada |
+| Jumpers | ENA, ENB e "5V" no lugar nas duas pontes |
+
+Detalhes e checklist no [capítulo 4](tutorial/04-ligacao-eletrica.md).
+
 ## Só tem 1 ponte H e 2 motores?
 
 Comece pelo **[teste rápido](tutorial/00-teste-rapido.md)**: valida o código com metade das peças,
