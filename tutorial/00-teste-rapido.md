@@ -79,7 +79,8 @@ segunda ponte H com os outros 2 motores ([capítulo 4](04-ligacao-eletrica.md)).
 
 **Primeiro, descubra se o problema é na montagem ou no app.** Grave o programa
 [`firmware/teste_motores/teste_motores.ino`](../firmware/teste_motores/teste_motores.ino). Ele não usa
-Wi‑Fi nem app: só gira o Motor 1 e o Motor 2 para um lado e para o outro, sem parar.
+Wi‑Fi nem app: gira cada motor (Base, Ombro, Cotovelo e Garra) para um lado e para o outro, sem parar.
+Com só 1 ponte H, Cotovelo e Garra simplesmente não giram na vez deles.
 
 | Com o programa de teste | Significa |
 |---|---|
