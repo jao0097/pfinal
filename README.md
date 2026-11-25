@@ -45,7 +45,8 @@ sem mudar nada no programa.
 | Garra | 2 (IN3/IN4) | 19 · 18 | Abre / Fecha |
 
 - **Rede:** `Garra-ESP`, senha `garra1234`, endereço **http://192.168.4.1**
-- **Fonte:** 7–9 V, 2 A ou mais (o L298N perde ~2 V)
+- **Fonte:** 7 V, 2 A ou mais (o L298N perde ~2 V). O ESP32 recebe 5 V do borne +5V da Ponte H 1 no VIN, sem USB
+- **Diagrama completo:** [`docs/img/garra-completa.png`](docs/img/garra-completa.png)
 - **Código:** um arquivo só, [`firmware/garra_esp32/garra_esp32.ino`](firmware/garra_esp32/garra_esp32.ino)
 
 ## Estrutura do repositório
