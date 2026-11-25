@@ -13,6 +13,8 @@ sem biblioteca extra e sem emendar fios.
 Celular → Wi-Fi → ESP32 → Ponte H → Motor DC → Manivela → Seringa mestre → água → Seringa escrava → Junta
 ```
 
+> **Outro projeto neste repositório:** [carro 4WD com ESP32 controlado pela web](carro/README.md).
+
 ## Diagrama completo
 
 <p align="center"><img src="docs/img/garra-completa.png" alt="Garra completa: ESP32 DevKit V1 no centro, uma ponte H L298N de cada lado com dois motores cada, fonte de 7 V nas trilhas da protoboard e o +5V da Ponte H 1 alimentando o VIN do ESP32"></p>
